@@ -6,8 +6,7 @@
     justify-content: center;
 }
 
-.card {
-    background-color: red;
-    height: 90px;
-    width: 90xp;
+.list {
+    display: flex;
+    flex-flow: wrap;
 }

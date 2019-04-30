@@ -1,6 +1,9 @@
 <header class="header">Rick'N Morty Api</header>
 <div class="list">
-  <app-card>
-    teste
-  </app-card>
+  <div   *ngFor="let character of characters">
+    <app-card
+    [character]="character"
+    ></app-card>
+
+  </div>
 </div>
