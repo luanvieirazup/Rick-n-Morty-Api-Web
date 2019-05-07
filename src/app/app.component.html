@@ -1,9 +1,14 @@
-<header class="header">Rick'N Morty Api</header>
-<div class="list">
-  <div   *ngFor="let character of characters">
-    <app-card
-    [character]="character"
-    ></app-card>
-
+<div class="home">
+  <header class="header">Rick'N Morty Api</header>
+  <div class="m-2 p-2">
+    <input class="form-control" type="text" placeholder="Pesquisar personagem">
+  </div>
+  <div class="list" (scroll)="onScroll($event)">
+    <div class="character__card" *ngFor="let character of characters">
+      <app-card
+      [character]="character"
+      >
+    </app-card>
+    </div>
   </div>
 </div>

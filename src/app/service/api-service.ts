@@ -1,4 +1,4 @@
-import { Character, ResultsCharacter } from './../interfaces/characters';
+import { ResultsCharacter } from './../interfaces/characters';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
